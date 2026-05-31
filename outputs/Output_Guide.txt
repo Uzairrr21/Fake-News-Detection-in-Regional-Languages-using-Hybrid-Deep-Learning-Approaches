@@ -1,0 +1,32 @@
+Outputs Guide
+
+Purpose
+This file summarises the important files produced by experiments and provides a small run-summary template you can fill after each run.
+
+Key output locations
+- `outputs/predictions/` — CSVs of model predictions (examples: `predictions_h1_rf.csv`, `predictions_h3_ensemble.csv`).
+- `outputs/figures/` — visualisations (confusion matrices, confidence histograms, class-distribution plots).
+
+Prediction CSV format
+- Typical columns: `id`, `text`, `true_label`, `predicted_label`, `predicted_prob` (or separate probability columns: `prob_Real`, `prob_Fake`, `prob_Satire`).
+- Use these CSVs for evaluation, error analysis, or downstream reporting.
+
+Quick commands
+```powershell
+Get-Content outputs\predictions\predictions_h3_ensemble.csv -TotalCount 20
+python notebooks/evaluate_predictions.py --pred outputs/predictions/predictions_h3_ensemble.csv
+```
+
+Reproducibility notes
+- Use the same random seed and model checkpoint referenced in the experiment header to reproduce any `predictions_*.csv` file.
+
+Run-summary template (fill after each run)
+- Date: 
+- Model / Script: 
+- Command: 
+- Seed: 42
+- Key metrics: Accuracy= , Macro-F1= 
+- Output files produced: 
+- Notes: (hardware, anomalies, next steps)
+
+You can edit this file to log run-specific details so other collaborators can quickly find the best outputs.
