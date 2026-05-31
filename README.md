@@ -376,39 +376,6 @@ True  Real │  276 │   13 │   11  │  92.00% recall
 | Platform | Kaggle (GPU-enabled notebook) |
 
 ---
-
-## Repository Structure
-
-```
-├── requirements.txt
-├── Research_Paper.pdf
-├── README.md
-├── notebook/
-│   ├── baseline_and_visualizations.py     # Part 1: NB baseline + distribution plots
-│   └── enhanced_hybrid_pipeline.py        # Part 2: Full 3-tier hybrid pipeline
-├── data/
-│   └── ml_ready_2column.csv               # 5,000-sample Urdu dataset (text, label)
-├── outputs/
-│   ├── predictions_best_H3_Ensemble.csv   # 750-sample test predictions w/ confidence
-│   ├── predictions_h1_lr.csv
-│   ├── predictions_h1_rf.csv
-│   ├── predictions_h1_gb.csv
-│   ├── predictions_h1_xgb.csv
-│   ├── predictions_h1_et.csv
-│   ├── predictions_h2_fusion.csv
-│   └── predictions_h3_ensemble.csv
-├── figures/
-│   ├── class_distribution.png
-│   ├── text_length_distribution.png
-│   ├── confusion_matrix.png                       # Baseline
-│   ├── classification_metrics_bar_chart.png       # Baseline
-│   ├── figure1_performance_comparison.png         # All hybrid models
-│   ├── figure2_confusion_matrix_analysis.png      # H3 best model
-│   └── figure3_statistical_summary.png            # Ranked table + stats
-
-    
-```
-
 ---
 
 ## Installation & Usage
