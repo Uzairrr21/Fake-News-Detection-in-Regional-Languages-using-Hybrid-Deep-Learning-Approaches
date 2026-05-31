@@ -380,8 +380,10 @@ True  Real │  276 │   13 │   11  │  92.00% recall
 ## Repository Structure
 
 ```
+├── requirements.txt
+├── Research_Paper.pdf
 ├── README.md
-├── code/
+├── notebook/
 │   ├── baseline_and_visualizations.py     # Part 1: NB baseline + distribution plots
 │   └── enhanced_hybrid_pipeline.py        # Part 2: Full 3-tier hybrid pipeline
 ├── data/
@@ -403,8 +405,8 @@ True  Real │  276 │   13 │   11  │  92.00% recall
 │   ├── figure1_performance_comparison.png         # All hybrid models
 │   ├── figure2_confusion_matrix_analysis.png      # H3 best model
 │   └── figure3_statistical_summary.png            # Ranked table + stats
-└── paper/
-    └── Research_Paper.pdf
+
+    
 ```
 
 ---
